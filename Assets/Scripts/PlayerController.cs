@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    private ShipTeleport theTeleporter; // A private variable to hold the ShipTeleport script component for teleportation functionality
+
     public Transform tf; // A public variable to hold the Transform component of the player
 
     //Developer Notes:
@@ -20,12 +22,17 @@ public class PlayerController : MonoBehaviour
     public float shipTurboSpeed = 10f; // The turbo speed of the ship, when activated by the player.
 
     //This is used for the teleportation functionality with the arrow keys, similar to the random teleport x & y limits above
-    public float teleportDistance = 2f; // The distance the player will teleport when using the arrow keys
+    //public float teleportDistance = 2f; // The distance the player will teleport when using the arrow keys
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        tf = GetComponent<Transform>(); // Initialize the tf variable with the Transform component of this GameObject
+        // Call the TeleportDirections method from the ShipTeleport script to initialize teleportation functionality
+        //GetComponent<ShipTeleport>().TeleportDirections(); 
+
+        theTeleporter = gameObject.GetComponent<ShipTeleport>();
+
+
     }
 
     // Update is called once per frame
@@ -43,7 +50,7 @@ public class PlayerController : MonoBehaviour
         //Otherwise, the player ship will not move or respond to input.
         PlayerMovement(); // Call the PlayerMovement method to handle player input and movement
 
-        TeleportDirections(); // Call the TeleportDirections method to handle teleportation input
+        //TeleportDirections(); // Call the TeleportDirections method to handle teleportation input
     }
 
     //Note: Used with the help of Unity Documentation and tutorials, such as the Transform.Rotate article.
@@ -87,7 +94,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //Note: Helpful reference https://docs.unity3d.com/6000.1/Documentation/ScriptReference/Vector2.html
-    void TeleportDirections()
+    /*void TeleportDirections()
     {
         
 
@@ -114,6 +121,6 @@ public class PlayerController : MonoBehaviour
             tf.position = new Vector3(newPos2D.x, newPos2D.y, tf.position.z);
             //Transform the player's position to the new position based on the teleportArrow direction on the x,y, and z axes.
         }
-    }
+    }*/
 
 }
