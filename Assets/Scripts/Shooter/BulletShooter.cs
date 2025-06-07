@@ -9,9 +9,23 @@ public class BulletShooter : Shooter
 
     public float fireForce;
 
+    public AudioSource shootAudioSource; // Audio source to play the shooting sound
+
+    public AudioClip shootAudioClip; // Audio clip to be played when shooting
+
+    public void Start()
+    {
+        shootAudioSource = GetComponent<AudioSource>(); // Get the AudioSource component attached to this GameObject
+    }
+    
     public override void Shoot()
-   {
-       // Instantiate the bullet at the firepoint position and rotation
+    {
+        if (shootAudioSource != null && shootAudioClip) //Note: && means both conditions must be true
+        {
+            shootAudioSource.PlayOneShot(shootAudioClip);
+        }
+        
+        // Instantiate the bullet at the firepoint position and rotation
        GameObject bulletInstance = Instantiate(bullet, firepointTransform.position, firepointTransform.rotation);
 
        if (bulletInstance != null)
