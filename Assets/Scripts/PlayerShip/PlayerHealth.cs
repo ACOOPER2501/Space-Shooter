@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // Importing UnityEngine.UI to use UI elements like Text, Image, etc.
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField] // This attribute allows private fields to be visible in the Unity Inspector
     private float currentHealth; // Player's current health, initialized to maxHealth
+
+    public Image healthBarImage; // Reference to the UI Image component that represents the health bar
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +37,8 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth; // If it does, set current health to maximum health number
         }
+
+        UpdateHealthBar();
     }
 
     public void TakeDamage(float amount)
@@ -48,6 +53,8 @@ public class PlayerHealth : MonoBehaviour
             InstaKill();
             
         }
+
+        UpdateHealthBar();
     }
 
     public void InstaKill()
@@ -59,6 +66,22 @@ public class PlayerHealth : MonoBehaviour
             deathComponent.Die(); // Call the Die method from the Death component if it exists
 
             Debug.Log("Player Ship Destroyed.");
+        }
+
+        UpdateHealthBar();
+    }
+
+    // This method updates the health bar UI based on the current health
+    public float ComputeHealthPercentage()
+    {
+        return currentHealth / maxHealth; // Calculate the health percentage by dividing current health by maximum health
+    }
+
+    public void UpdateHealthBar()
+    {
+        if (healthBarImage != null) // Check if the health bar image reference is assigned in the Inspector
+        {
+            healthBarImage.fillAmount = ComputeHealthPercentage(); // Update the health bar UI based on the current health percentage
         }
     }
 
