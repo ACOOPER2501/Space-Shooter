@@ -14,12 +14,13 @@ public class Projectile : MonoBehaviour
     // This method is called when the projectile enters a trigger collider
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerHealth health = collision.GetComponent<PlayerHealth>(); // Attempt to get the PlayerHealth component from the collided object
+        Asteroid asteroid = collision.GetComponent<Asteroid>(); // Attempt to get the Asteroid component from the collided object
 
-        if (health != null)
+        if (asteroid != null)
         {
-            health.TakeDamage(damage);
+            asteroid.TakeDamage(damage);
             Destroy(gameObject); // Destroy bullet on hit
+            return;
         }
     }
 

@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 96a7fcc68c22e014d86380dab6a2f70e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -516153467842180372
+    second: Star Shooter Options Volume_0
+  - first:
+      213: -7362947936092395038
+    second: Star Shooter Options Volume_1
+  - first:
+      213: -1459171975474990449
+    second: Star Shooter Options Volume_2
+  - first:
+      213: -4217679014412455786
+    second: Star Shooter Options Volume_3
+  - first:
+      213: -4499113728230662170
+    second: Star Shooter Options Volume_4
+  - first:
+      213: -3258858987108985478
+    second: Star Shooter Options Volume_5
+  - first:
+      213: -1429349604938772505
+    second: Star Shooter Options Volume_6
+  - first:
+      213: 4612650656725595604
+    second: Star Shooter Options Volume_7
+  - first:
+      213: 2772474903939697001
+    second: Star Shooter Options Volume_8
+  - first:
+      213: -8359745341334551939
+    second: Star Shooter Options Volume_9
+  - first:
+      213: 2248278021993659160
+    second: Star Shooter Options Volume_10
+  - first:
+      213: 4207565516246720414
+    second: Star Shooter Options Volume_11
+  - first:
+      213: 7875967965459180642
+    second: Star Shooter Options Volume_12
+  - first:
+      213: 3338864479472999259
+    second: Star Shooter Options Volume_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 302
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea4eabd72146d8f0800000000000000
+      internalID: -516153467842180372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 302
+        width: 73
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e96489dcdd81d990800000000000000
+      internalID: -7362947936092395038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_2
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 424
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82bb9fb1daffbbe0800000000000000
+      internalID: -1459171975474990449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 266
+        width: 146
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6907359584bc775c0800000000000000
+      internalID: -4217679014412455786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_4
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 302
+        width: 62
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef5ab8c6efef81c0800000000000000
+      internalID: -4499113728230662170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_5
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 302
+        width: 110
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a759744740536c2d0800000000000000
+      internalID: -3258858987108985478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 303
+        width: 130
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef87c97b1ee92ce0800000000000000
+      internalID: -1429349604938772505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_7
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 302
+        width: 97
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5f91b555d630040800000000000000
+      internalID: 4612650656725595604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 49
+        width: 162
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969c2066c3fc97620800000000000000
+      internalID: 2772474903939697001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_9
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 49
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72070567e73cfb80800000000000000
+      internalID: -8359745341334551939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 49
+        width: 66
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bff39f2fc733f10800000000000000
+      internalID: 2248278021993659160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_11
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 49
+        width: 121
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f911d5b86446a30800000000000000
+      internalID: 4207565516246720414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_12
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 50
+        width: 188
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cec8bc22f0d4d60800000000000000
+      internalID: 7875967965459180642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Star Shooter Options Volume_13
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 49
+        width: 98
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b5824dd87065e20800000000000000
+      internalID: 3338864479472999259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Star Shooter Options Volume_0: -516153467842180372
+      Star Shooter Options Volume_1: -7362947936092395038
+      Star Shooter Options Volume_10: 2248278021993659160
+      Star Shooter Options Volume_11: 4207565516246720414
+      Star Shooter Options Volume_12: 7875967965459180642
+      Star Shooter Options Volume_13: 3338864479472999259
+      Star Shooter Options Volume_2: -1459171975474990449
+      Star Shooter Options Volume_3: -4217679014412455786
+      Star Shooter Options Volume_4: -4499113728230662170
+      Star Shooter Options Volume_5: -3258858987108985478
+      Star Shooter Options Volume_6: -1429349604938772505
+      Star Shooter Options Volume_7: 4612650656725595604
+      Star Shooter Options Volume_8: 2772474903939697001
+      Star Shooter Options Volume_9: -8359745341334551939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

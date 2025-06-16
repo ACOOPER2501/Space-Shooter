@@ -18,5 +18,6 @@ public class DeathDestroy : Death // Inherits from the abstract Death class, whi
     {
         // Destroy the game object this script is attached to
         Destroy(gameObject);
+        
     }
 }

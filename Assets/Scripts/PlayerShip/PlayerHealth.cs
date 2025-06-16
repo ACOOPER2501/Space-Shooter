@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Importing UnityEngine.UI to use UI elements like Text, Image, etc.
+using UnityEngine.Events; // Importing UnityEngine.Events to use UnityEvent for event handling
 
 public class PlayerHealth : MonoBehaviour
 {
+    //Changed to public so that it could be called from other scripts without needing to use GetComponent<PlayerHealth>().
+    public float maxHealth; // Player's maximum health, set to 100 by default
 
-    [SerializeField] // This attribute allows private fields to be visible in the Unity Inspector
-    private float maxHealth; // Player's maximum health, set to 100 by default
-
-    [SerializeField] // This attribute allows private fields to be visible in the Unity Inspector
-    private float currentHealth; // Player's current health, initialized to maxHealth
+    //Changed to public so that it could be called from other scripts without needing to use GetComponent<PlayerHealth>().
+    public float currentHealth; // Player's current health, initialized to maxHealth
 
     public Image healthBarImage; // Reference to the UI Image component that represents the health bar
+
+    public LivesManager LivesManager; // Reference to the LivesManager component to manage player lives
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
-        //Heal(5);
-        //TakeDamage(100);
     }
 
     // Update is called once per frame
@@ -43,20 +43,35 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
-        currentHealth = currentHealth - amount;
-        //Using currentHealth -= amount; would also work the same way
+        currentHealth -= amount;
         
         if (currentHealth <= 0) // Check if current health is less than or equal to zero
         {
             currentHealth = 0; // If it is, set current health to zero. This is to avoid negative health values
 
-            InstaKill();
-            
+            //InstaKill();
+
+            gameObject.SetActive(false);
+
+            gameObject.transform.position = new Vector3(0.0f, -3.0f, 0.0f); // Move the game object to the starting position of (0, -3, 0)
+
+            if (LivesManager != null) // Check if LivesManager reference is assigned in the Inspector
+            {
+                LivesManager.RemoveLife(); // Call the RemoveLife method from LivesManager to decrement the player's lives
+            }
+            else
+            {
+                Debug.LogWarning("LivesManager reference is not assigned in PlayerHealth script."); // Log a warning if LivesManager is not assigned
+            }
+
+            //GetComponent<LivesManager>().RemoveLife(); // Call the RemoveLife method from LivesManager to decrement the player's lives
+
         }
 
         UpdateHealthBar();
     }
 
+    
     public void InstaKill()
     {
         Death deathComponent = GetComponent<Death>();

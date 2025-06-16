@@ -23,7 +23,7 @@ public class Obstacle : MonoBehaviour
     }
 
     // This method is called when the collider attached to this GameObject collides with another collider
-    public void OnCollisionEnter2D(Collision2D otherObject)
+    public void OnTriggerEnter2D(Collider2D otherObject)
     {
         // Check if the other object has a PlayerHealth component
         PlayerHealth healthComponent = otherObject.gameObject.GetComponent<PlayerHealth>();
@@ -41,15 +41,16 @@ public class Obstacle : MonoBehaviour
                 healthComponent.TakeDamage(damageAmount); // Call the TakeDamage method from the PlayerHealth component
             }
 
-            PlayerHealth health = GetComponent<PlayerHealth>();
+            Asteroid asteroid = GetComponent<Asteroid>(); // Get the Asteroid component attached to this GameObject
 
-            if (health != null)
+            if (asteroid != null) // Check if the current GameObject has an Asteroid component
             {
-                health.InstaKill();
+                asteroid.InstaKill(); // Call the InstaKill method from the Asteroid component if it exists
             }
-
-            Destroy(gameObject); // Destroy this obstacle GameObject
-
+            else
+            {
+                Destroy(gameObject); // Destroy this obstacle GameObject
+            }
         }
 
         Debug.Log("Is Hitting Object");

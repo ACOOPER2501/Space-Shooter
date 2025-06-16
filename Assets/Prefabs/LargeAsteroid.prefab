@@ -192,9 +192,9 @@ GameObject:
   - component: {fileID: 2587190433495786954}
   - component: {fileID: 5090971988799950687}
   - component: {fileID: 7405408716401857178}
-  - component: {fileID: 414593420325355796}
+  - component: {fileID: 7184029664230502008}
   m_Layer: 0
-  m_Name: Asteroid
+  m_Name: LargeAsteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3308188852991373423}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 198ca393dccc41442a39bca4305d215d, type: 3}
   m_Name: 
@@ -314,7 +314,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -374,9 +374,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &5090971988799950687
 MonoBehaviour:
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7c81f8596fb4f45ab0c961ca866849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 20
   isInstaKill: 0
 --- !u!114 &7405408716401857178
 MonoBehaviour:
@@ -404,8 +404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b90c1608357e6aa48aeb63d8b4dc846f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsToAward: 100
---- !u!114 &414593420325355796
+  pointsToAward: 200
+--- !u!114 &7184029664230502008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,9 +414,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3308188852991373423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6374ed4590e754246b889daa116bc133, type: 3}
+  m_Script: {fileID: 11500000, guid: ed35cf3e1586532428b5626892403bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
-  currentHealth: 30
-  healthBarImage: {fileID: 3605539924156128116}
+  asteroidMaxHealth: 30
+  asteroidCurrentHealth: 30
+  asteroidHealthBarImage: {fileID: 3605539924156128116}
+  speed: 2
+  rb: {fileID: 2587190433495786954}
+  moveSpeed: 2
+  moveDirection: {x: 0, y: -1}
